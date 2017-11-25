@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.min.jafangi.MainActivity"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Relative 시작 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- 식당 대표 사진 및 상호, 주소 -->
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="중앙 식당"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tv_shop_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_shop_name"
+                android:layout_marginLeft="10dp"
+                android:text="광주광역시 남구 봉선1동 봉선중앙로134번길 6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <ImageView
+                android:id="@+id/image_shop"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_below="@id/tv_shop_address"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_jl_shop" />
+
+            />
+            <!-- Relative 끝 -->
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- Linear 시작 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--  사진 + 이름 + 가격 -->
+        <ImageView
+            android:id="@+id/shop_menu"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignEnd="@+id/tv_shop_address"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/img_jl_menu" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/jl_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:text="엄마백반: \ 6,000 "
+                android:textSize="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/jl_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/jl_amount"
+                android:text="평 점 : 4.1 / 5" />
+            <!--  이름 + 가격 -->
+
+        </RelativeLayout>
+        <!-- Linear 끝 -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_map"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/map"
+            android:background="#FFFFFF"
+            />
+
+
+        <ImageButton
+            android:id="@+id/btn_call"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/call"
+            android:background="#FFFFFF"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

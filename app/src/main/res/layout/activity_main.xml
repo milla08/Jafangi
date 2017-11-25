@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.min.jafangi.MainActivity"
+    android:background="#FFFFFF"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+
+        <ImageButton
+            android:id="@+id/btn_KG"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/map_kg"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+             />
+
+        <ImageButton
+            android:id="@+id/btn_KW"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/map_kw"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_CC"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/map_cc"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_KS"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/map_ks"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_JL"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/map_jl"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_JJ"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/map_jj"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
